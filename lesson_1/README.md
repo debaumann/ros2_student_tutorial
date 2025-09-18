@@ -1,22 +1,18 @@
-Hi there!
+Lesson 1:
 
-Good you made it here, but this is merely the start!
-This is treasure node 0. in this hunt, you will need to use all your skills to find
-your way all the way to the treasure!!!
+Welcome to lesson_1: we embark on terminal treasure hunt, where you can put your new skills to the test.
 
-You must complete 3 stops along the way and collect the keywords and write them into
- a file: /home/student/git/ros2_student_tutorial/lesson_1/treasure_results.txt
+general rules: unless ultimately necessary refrain from using 'sudo', try it without using any llm's use the slides and internet first. only then use llm's
+This lesson is for you not a mandatory exercise.
+Setup:
+run the setup script as USER and enter your password if prompted. 
 
-Navigate to the lesson_1 directory and make sure you are in the right place: use === pwd === to check
-the path to your current directory. 
+Treasure Hunt: 
+You find yourself at at folder lesson_1, where the treasure hunt starts:
 
-Before we start, let me explain the excercise:  
-
--- you must run the setup script before starting on your journey. 
--- 
-
-
-Once you have run the script the setup script return back to this treasure map 
-and start with finding the clues hidden within this file: 
+- Here is where your treasure map is stored: find clues with keywords inside the messy and criptic treasure map it looks like this: KEYWORD -> CLUE 
+- You must find the entrance to the maze and find the key chamber
+- there you will find the data you need to unlock the treasure, copy that data to the key_data folder at lesson_1
+- fix the reconstruct treasure shell script and run it for your treasure
 
 keywords: 
