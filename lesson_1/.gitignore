@@ -1,0 +1,5 @@
+.maze
+.maze/*
+*.txt
+key_data
+reconstruct_treasure.sh
