@@ -48,13 +48,13 @@ tail_gap="$(rand_range "$MIN_GAP" "$MAX_GAP")"
 
 # Emit: [gap1 noise] -> clue1 -> [gap2 noise] -> clue2 -> [gap3 noise] -> clue3 -> [tail noise optional]
 emit_noise "$gap1" "$((SEED+1000))" >> "$OUTFILE"
-echo "(\"${KEYWORDS[0]}\") FIX ALIASES IN THE BASHRC " >> "$OUTFILE"
+echo "(\"${KEYWORDS[0]}\")FoIoXoTjHjEjAtLtItAtStIgNgToHoEoBpApSpHpRpCpUqSqEqDyOyUyByLyEyQzUzOzTzEzS " >> "$OUTFILE"
 
 emit_noise "$gap2" "$((SEED+2000))" >> "$OUTFILE"
-echo "(\"${KEYWORDS[1]}\")CHANGE OWNERSHIP OF THE FOLDER" >> "$OUTFILE"
+echo "(\"${KEYWORDS[1]}\")CpHpApNpGpEpOoWoNoEoRoSoHoIoPoOtFtTyHyEyKqEqYqDuAuTuAuFvOvLvDvEvRv" >> "$OUTFILE"
 
 emit_noise "$gap3" "$((SEED+3000))" >> "$OUTFILE"
-echo "(\"${KEYWORDS[2]}\") WHAT TO DO FOR telnet starwarstel.net" >> "$OUTFILE"
+echo "(\"${KEYWORDS[2]}\")CpHpMpOpDp+pXpTjHjEjSgCgRgIgPgTgAsNsDsFyIyXyTzHzEzLzOzOzPz" >> "$OUTFILE"
 
 emit_noise "$tail_gap" "$((SEED+4000))" >> "$OUTFILE"
 

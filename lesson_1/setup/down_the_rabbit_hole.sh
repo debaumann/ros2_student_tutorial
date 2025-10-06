@@ -10,7 +10,6 @@ BASHRC="$HOME/.bashrc"
 TAG_START="# >>> Treasure Hunt Alias Challenge START >>>"
 TAG_END="# <<< Treasure Hunt Alias Challenge END <<<"
 
-echo "$MAZE_ROOT"
 mkdir -p "$MAZE_ROOT"
 
 current="$MAZE_ROOT"
@@ -19,13 +18,13 @@ for i in $(seq -w 1 "$LEVELS"); do
   current="$current/$level_dir"
   mkdir -p "$current"
   for s in $(seq 1 "$SIBLINGS_PER_LEVEL"); do
-    mkdir -p "$MAZE_ROOT/$level_dir/noise_${s}" 2>/dev/null || true
+    mkdir -p "$current/room_${s}"
   done
 done
 
 KEY_DIR="$current/key_chamber"
 mkdir -p "$KEY_DIR"
-echo "ALIAS_UNLOCKED" > "$KEY_DIR/key.txt"
+echo "QUASAR" > "$KEY_DIR/next_clue_keyword.txt"
 
 #remove inserted alias if rerun
 if grep -q "$TAG_START" "$BASHRC"; then
