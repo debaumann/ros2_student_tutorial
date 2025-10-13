@@ -1,0 +1,6 @@
+roulette_interfaces/Bet bettings
+---
+#Todo formulate the response of the service we want to return winnings
+int32 winnings
+int32 winning_number
+string winning_color

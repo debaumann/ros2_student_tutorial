@@ -9,14 +9,13 @@ class Roller(Node):
     def __init__(self):
         super().__init__('roller')
         self.publisher = self.create_publisher(UInt8MultiArray, 'image_array', 10)
-        self.parameters = self.declare_parameter('data_path', 'talker_listener/talker_listener/data')
+        self.parameters = self.declare_parameter('data_path', 'talker_listener/data')
         rclpy.logging.get_logger('roller').info(f'Parameter value: {self.parameters.value}')
         self.relative_path = self.parameters.value
         self.image_paths = sorted([img for img in os.listdir(self.relative_path) if img.endswith(('.png', '.jpg', '.jpeg'))])
         self.images = self.load_images()
         self.index = 0
         self.timer = self.create_timer(0.1, self.timer_callback)
-        rclpy.logging.get_logger('roller').info(f'length of images: {len(self.images)}')
     def load_images(self):
         images = []
         for f in self.image_paths:
